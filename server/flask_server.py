@@ -13,7 +13,7 @@ from models_inference.locate_faces import locate_faces
 app = Flask(__name__)
 cors = CORS(app, resources={r"*": {"origins": "*"}})
 
-target_emotions = ['calm', 'anger', 'happiness']
+target_emotions = ['anger', 'happiness']
 model = FERStreamingModel(target_emotions, verbose=True)
 
 
