@@ -1,4 +1,5 @@
 
+import sys; sys.path.extend(['.'])
 import base64
 
 import cv2
@@ -6,8 +7,7 @@ import numpy as np
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
-from models_inference.face_emotions_stream import FERStreamingModel
-from models_inference.locate_faces import locate_faces
+from src.models_inference import locate_faces, FERStreamingModel
 
 
 app = Flask(__name__)
@@ -56,4 +56,4 @@ def find_faces():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5001)
