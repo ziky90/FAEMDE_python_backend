@@ -1,1 +1,2 @@
-# FAMDE_python_backend
+# FAEMDE_python_backend
+Face Emotion Detection
