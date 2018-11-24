@@ -49,9 +49,8 @@ def find_faces():
     """
     image = read_image()
     face_locations = locate_faces(image)
-    results = {}
-    for pos, face in enumerate(face_locations):
-        results[pos] = {'bbox': [int(i) for i in face]}
+    results = [[int(x) for x in face] for face in face_locations]
+
     return jsonify(results)
 
 
