@@ -1,4 +1,4 @@
-# FAEMDE_python_backend
+# CSAI python backend for computer vision
 Face Emotion Detection
 
 ## Installation
