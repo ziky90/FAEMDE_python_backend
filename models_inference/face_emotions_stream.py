@@ -23,6 +23,7 @@ class FERStreamingModel(FERModel):
             list(self.target_dimensions)+[self.channels])])
         prediction = self.model.predict(final_image)[0]
         self._print_prediction(prediction)
+
         normalized_prediction = [x / sum(prediction) for x in prediction]
         result = {}
         for emotion in self.emotion_map.keys():

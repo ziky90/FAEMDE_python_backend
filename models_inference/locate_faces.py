@@ -17,4 +17,5 @@ def locate_faces(input_image):
     gray = cv2.cvtColor(input_image, cv2.COLOR_BGR2GRAY)
     # detect the faces
     faces = face_cascade.detectMultiScale(gray, 1.2, 5)
+    print(faces)
     return faces
