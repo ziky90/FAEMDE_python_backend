@@ -3,6 +3,9 @@ Face Emotion Detection
 
 ## Installation
 NOTE: code was tested only with python 3.6.
+
+Install dependencies by:
+
 `pip install -r requirments.txt`
 
 ## Runing the server
