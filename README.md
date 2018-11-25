@@ -13,4 +13,5 @@ Install dependencies by:
 
 ### Available API endpoints
 `/analyse_emotions` - perform analysis of emotions
+
 `/find_faces` - find faces in the image
